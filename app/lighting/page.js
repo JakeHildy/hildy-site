@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Switch from "../../components/switch";
 
 const LightingPage = () => {
   return (
@@ -7,6 +8,7 @@ const LightingPage = () => {
       <div className="flex flex-col items-center">
         <h1 className="text-4xl text-white font-light">Lighting Controls</h1>
       </div>
+      <Switch />
     </>
   );
 };
