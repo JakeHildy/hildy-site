@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-roboto)"],
+        fredericka: ["var(--font-fredericka)"],
+      },
+      scale: {
+        101: "1.01",
       },
     },
   },

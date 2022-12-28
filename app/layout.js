@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Roboto } from "@next/font/google";
+import { Roboto, Fredericka_the_Great } from "@next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -7,9 +7,18 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+const frederickaTheGreat = Fredericka_the_Great({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-fredericka",
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${roboto.variable}`}>
+    <html
+      lang="en"
+      className={`${roboto.variable} ${frederickaTheGreat.variable}`}
+    >
       <head />
       <body className="h-screen bg-gray-700 p-2">{children}</body>
     </html>
